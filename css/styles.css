@@ -325,7 +325,7 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: white;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .slider .slider-active {
   opacity: 1;
