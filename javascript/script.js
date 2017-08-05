@@ -22,4 +22,23 @@ $( document ).ready(function() {
     }
   });
 
+  $('.slider span').on('click',function(){
+    $index = $(this).index();
+    index = $index +1;
+    $(this).parent().children().removeClass('slider-active');
+    $(this).addClass('slider-active');
+    $('.slide-picture ol').children().fadeOut(600, function(){
+      $(this).removeClass('active');
+    });
+    $('.rot-text-content ol').children().fadeOut(500, function(){
+      $(this).removeClass('text-active');
+    });
+    $('.slide-picture ol :nth-child('+index+')').fadeIn(500, function(){
+      $(this).addClass('active');
+    });
+    $('.rot-text-content ol :nth-child('+index+')').fadeIn(500, function(){
+      $(this).addClass('text-active');
+    });
+  });
+
 });

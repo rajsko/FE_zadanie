@@ -286,6 +286,18 @@
   color: white;
   top: 150px;
 }
+.rot-text-content ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.rot-text-content ol li {
+  position: absolute;
+  display: none;
+}
+.rot-text-content ol .text-active {
+  display: block;
+}
 .rot-text-content h1 {
   font-size: 50px;
   font-weight: 800;
@@ -304,6 +316,18 @@
   height: 283px;
   width: 412px;
 }
+.slide-picture ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.slide-picture ol li {
+  position: absolute;
+  display: none;
+}
+.slide-picture ol .active {
+  display: block;
+}
 .slide-picture img {
   object-fit: cover;
   height: 283px;
@@ -317,6 +341,7 @@
   text-align: center;
 }
 .slider span {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   margin: 6px;
