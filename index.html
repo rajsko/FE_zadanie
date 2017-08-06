@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>FE zadanie</title>
-    <!-- Latest compiled and minified CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+
     <div class="container-fluid navigator">
       <nav class="navbar">
         <div class="hamburger">
@@ -30,7 +30,6 @@
         </div>
       <div class="logo">
         <div class="logo-icon">
-
         </div>
       </div>
       <div class="collapse navbar-collapse">
@@ -38,18 +37,17 @@
           <li class="navbar-item"><a class="nav-link" href="#">Lorem ipsum</a></li>
           <li class="navbar-item"><a class="nav-link" href="#">Lorem ipsum</a></li>
           <li class="navbar-item"><a class="nav-link" href="#">Lorem ipsum</a></li>
+          <li class="navbar-item"><a class="nav-link" href="#">Lorem ipsum</a></li>
         </ul>
-        <div class="rigth-navigation">
-          <a href="#" class="nav-link" id="link-right">Lorem ispum</a>
-        </div>
       </div>
+  
     </nav>
     </div>
 
       <div class="container-fluid rotator">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 rot-text-content">
+            <div class="col-sm-6 col-xs-12 rot-text-content">
               <ol>
                 <li class="text-active">
                   <h1>Lorem ipsum dolor</h1>
@@ -69,58 +67,76 @@
                 </li>
               </ol>
             </div>
-            <div class="col-lg-6 slide-picture" >
+            <div class="col-sm-6 col-xs-12 slide-picture" >
               <ol>
-                <li class="active"><img src="img/road.png" class="hover-shadow" alt="0"></li>
-                <li><img src="http://via.placeholder.com/413x279" class="hover-shadow" alt="1"></li>
-                <li><img src="img/road.png" class="hover-shadow" alt="2"></li>
-                <li><img src="http://via.placeholder.com/413x279" class="hover-shadow" alt="3"></li>
+                <li class="active"><a href="#img1"><img src="img/road.png" title="road" alt="road"></a>
+                  <div class="lightbox" id="img1">
+                    <img src="img/road.png" alt="road" title="road">
+                    <a href="#" class="lightbox-close"></a>
+                  </div>
+                </li>
+                <li><a href="#img2"><img src="http://via.placeholder.com/413x279" alt="placeholder" title="placeholder"></a>
+                  <div class="lightbox" id="img2">
+                    <img src="http://via.placeholder.com/413x279" alt="placeholder" title="placeholder">
+                    <a href="#" class="lightbox-close"></a>
+                  </div>
+                </li>
+                <li><a href="#img3"><img src="img/road.png" title="road" alt="road"></a>
+                  <div class="lightbox" id="img3">
+                    <img src="img/road.png" alt="road" title="road">
+                    <a href="#" class="lightbox-close"></a>
+                  </div>
+                </li>
+                <li><a href="#img4"><img src="http://via.placeholder.com/413x279" title="placeholder" alt="placeholder"></a>
+                  <div class="lightbox" id="img4">
+                    <img src="http://via.placeholder.com/413x279" alt="placeholder" title="placeholder">
+                    <a href="#" class="lightbox-close"></a>
+                  </div>
+                </li>
               </ol>
-
               <div class="play-button"></div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12 slider">
+            <div class="col-xs-12 slider">
               <span class="slider-active"></span>
               <span></span>
               <span></span>
               <span></span>
             </div>
-
           </div>
         </div>
-
       </div>
-      <div class="container">
-        <div class="row main-content-block">
-          <div class=" col-lg-6 fish-1">
-            <img src="img/blue-fish.png" alt="">
+      <div class="contatiner-fluid contain-imgs">
+        <div class="container">
+          <div class="row main-content-block">
+            <div class=" col-sm-6 col-xs-12 fish-1-content">
+              <h2>Lorem ipsum dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la</p>
+            </div>
+            <div class=" col-sm-6 col-xs-12 fish-1">
+              <img src="img/blue-fish.png" alt="fish" title="blue fish">
+            </div>
           </div>
-          <div class=" col-lg-6 fish-1-content">
-            <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la</p>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12 fish-2-content">
+              <h2>Lorem ipsum dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 fish-2">
+              <img src="img/octopus.png" alt="octopus" title="orange octopus">
+            </div>
           </div>
-
-      </div>
-      <div class="row">
-        <div class="col-lg-6 fish-2-content">
-          <h2>Lorem ipsum dolor</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la</p>
         </div>
-        <div class="col-lg-6 fish-2">
-          <img src="img/octopus.png" alt="">
-        </div>
-      </div>
       </div>
       <div class="container-fluid">
         <div class="row newsletter">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 newsletter-logo">
-                <img src="icons/logo.png" alt="">
+              <div class="col-sm-6 col-xs-12 newsletter-logo">
+                <img src="icons/logo.png" title="sailor" alt="sailor logo">
               </div>
-              <div class="col-lg-6 newsletter-subscribe">
+              <div class="col-sm-6 col-xs-12 newsletter-subscribe">
                 <div class="form-wrap">
                   <form class="news-form" action="index.html" method="post">
                     <input type="text" name="" value="Lorem ipsum dolor et simet" class="news-input">
@@ -136,7 +152,7 @@
       </div>
       <div class="container referencie">
         <div class="row">
-            <div class="col-md-3  stlpec-1">
+            <div class="col-md-3 col-xs-6  stlpec-1">
               <h3>Lorem ipsum</h3>
               <ul>
                 <li><a href="#">Lorem ipsum dolor</a></li>
@@ -147,7 +163,7 @@
                 <li><a href="#">Lorem ipsum dolor sit</a></li>
               </ul>
             </div>
-            <div class="col-md-3 stlpec-2">
+            <div class="col-md-3 col-xs-6 stlpec-2">
               <h3>Lorem ipsum</h3>
               <ul>
                 <li><a href="#">Lorem ipsum dolor</a></li>
@@ -158,9 +174,9 @@
                 <li><a href="#">Lorem ipsum dolor sit</a></li>
               </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <div class="row" id="st-2">
-                <div class="col-md-6 stlpec-3">
+                <div class="col-md-6 col-xs-6 stlpec-3">
                   <h3>Lorem ipsum</h3>
                   <ul>
                     <li><a href="#">Lorem ipsum dolor</a></li>
@@ -168,7 +184,7 @@
                     <li><a href="#">Lorem ipsum dolor</a></li>
                   </ul>
                 </div>
-                <div class="col-md-6 stlpec-4">
+                <div class="col-md-6 col-xs-6 stlpec-4">
                   <h3>Lorem ipsum</h3>
                   <ul>
                     <li><a href="#">Lorem ipsum dolor</a></li>
@@ -178,7 +194,7 @@
                 </div>
 
               </div>
-              <div class="row">
+              <div class="row" id="st-3">
                 <div class="col-md-12 advert">
 
                 </div>
@@ -190,9 +206,13 @@
       </div>
       <div class="footer">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+          <div class="to-top">
+            <img src="icons/toTop.png" alt="arrow" title="arrow to top">
+          </div>
+
+
       </div>
-
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
